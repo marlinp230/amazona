@@ -4,9 +4,12 @@ function App() {
   return (  
     <div className="App">
       <header className="App-header">
-       Hola como esta ?
+    <a href="/">amazona</a>
       </header>
-      <h1>hello againt</h1>
+      
+      <main>
+        list products
+      </main>
     </div> 
   );
 }
