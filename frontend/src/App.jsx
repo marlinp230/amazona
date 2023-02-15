@@ -1,16 +1,25 @@
 
 
+import  { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import Home from './Pages/Home';
+import Product from './Componets/Product';
+
 function App() {
-  return (  
+  return (
+    <BrowserRouter>
     <div className="App">
       <header className="App-header">
-    <a href="/">amazona</a>
+        <Link href="/">amazona</Link>
       </header>
-      
       <main>
-        list products
+      <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/product/:slug' element={<Product/>}/>
+      </Routes>
+
       </main>
-    </div> 
+    </div>
+    </BrowserRouter>
   );
 }
 
